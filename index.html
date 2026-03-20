@@ -1,0 +1,256 @@
+<!DOCTYPE html><html class="" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Obsidian — Precision in Darkness</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"tertiary-fixed": "#6bffc1", "primary-container": "#a589f8", "primary-fixed": "#a589f8", "on-surface-variant": "#5d5e6c", "surface-container-low": "#f4f2fe", "on-primary-fixed": "#000000", "on-background": "#30323e", "surface-container": "#eeecfa", outline: "#797988", "surface-container-highest": "#e2e1f2", "error-container": "#f97386", "surface-container-high": "#e8e7f5", secondary: "#5e5e67", "tertiary-container": "#6bffc1", "on-secondary": "#faf8ff", surface: "#fbf8ff", "surface-container-lowest": "#ffffff", "on-surface": "#30323e", "on-error-container": "#6e0523", "on-tertiary": "#e6ffef", "secondary-container": "#e3e1ec", "inverse-surface": "#0d0e14", "on-tertiary-fixed": "#004b33", "on-primary": "#fdf7ff", "on-secondary-fixed-variant": "#5a5b63", "on-error": "#fff7f7", primary: "#684cb6", "inverse-primary": "#a589f8", "surface-tint": "#684cb6", "on-secondary-container": "#515159", "outline-variant": "#b1b1c0", "surface-bright": "#fbf8ff", "tertiary-fixed-dim": "#5af0b4", "on-secondary-fixed": "#3e3f47", "on-primary-container": "#230062", background: "#fbf8ff", "secondary-fixed": "#e3e1ec", tertiary: "#006d4b", "on-tertiary-fixed-variant": "#006b4a", "on-primary-fixed-variant": "#2e007c", "surface-dim": "#d9d8e9", "primary-fixed-dim": "#987cea", error: "#a8364b", "surface-variant": "#e2e1f2", "on-tertiary-container": "#006042", "secondary-fixed-dim": "#d4d3dd", "inverse-on-surface": "#9d9ca4", "secondary-dim": "#52525b", "tertiary-dim": "#005f41", "error-dim": "#6b0221", "primary-dim": "#5b3fa9"}, fontFamily: {headline: ["Geist"], body: ["Geist"], label: ["Geist"], display: "Geist"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}}}};</script>
+<style>
+        body {
+            font-family: 'Geist', sans-serif;
+            background-color: #09090b;
+            color: #fafafa;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary/30 selection:text-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-zinc-50" style="">Obsidian</div>
+<div class="hidden md:flex items-center space-x-8 font-geist tracking-tight text-sm font-medium">
+<a class="text-violet-400 border-b-2 border-violet-400 pb-1 active:scale-95 transition-transform" href="#hero" style="">Home</a>
+<a class="text-zinc-400 hover:text-zinc-50 transition-colors duration-200 active:scale-95 transition-transform" href="#about" style="">About</a>
+<a class="text-zinc-400 hover:text-zinc-50 transition-colors duration-200 active:scale-95 transition-transform" href="#services" style="">Services</a>
+<a class="text-zinc-400 hover:text-zinc-50 transition-colors duration-200 active:scale-95 transition-transform" href="#portfolio" style="">Portfolio</a>
+<a class="text-zinc-400 hover:text-zinc-50 transition-colors duration-200 active:scale-95 transition-transform" href="#contact" style="">Contact</a>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-medium py-2 px-5 rounded transition-all duration-200 active:scale-95 text-sm" style="">
+                Get in Touch
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative overflow-hidden px-6 py-20 md:py-32 max-w-7xl mx-auto" id="hero">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-outline-variant bg-surface-container-high text-xs font-medium text-tertiary">
+<span class="flex h-2 w-2 rounded-full bg-tertiary"></span>
+<span class="" style="">Available for new projects</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.1] text-on-background" style="">
+                        Modern Solutions for <br> <span class="text-primary" style="">Digital Products</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed" style="">
+                        I bridge the gap between complex engineering and human-centric design, crafting interfaces that feel as good as they look. Focused on performance and precision.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-on-primary font-bold py-4 px-8 rounded-lg shadow-lg hover:brightness-110 transition-all active:scale-95 flex items-center gap-2" style="">
+                            View Work
+                            <span class="material-symbols-outlined text-[20px]" style="">arrow_forward</span>
+</button>
+<button class="border border-outline-variant text-on-background font-bold py-4 px-8 rounded-lg hover:bg-surface-container-high transition-all active:scale-95" style="">
+                            Download CV
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 flex justify-center lg:justify-end">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-tr from-primary to-tertiary rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+<div class="relative bg-surface-container rounded-2xl border border-outline-variant p-2 aspect-square w-full max-w-md overflow-hidden">
+<img alt="Avatar" class="w-full h-full object-cover rounded-xl" data-alt="Modern professional portrait with dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOuPCdO8IfSTyDoFYYO6Dc6xd1EDkBypACVDb697NAra2hG7SBwRQvrgukNFVPey1yuP5BFx0Lg_tOtgfFFXcmIIfUP4tb6f3PLlYmhBUPmmJn4daoG9E9VCHzxhdthytkxISWp9VpRPiIVCQqgd_TQj1CoSsNbLwRptkzELE8sDRVt-DeUq28H_c3BEMnoUB9ZBOfrjMSponHqbdQrzlb53Qpfb0xtHUDbmW4fi8CdILYv1Ny6zUnNH7bXLdgtTGpJcAOSgIxDrb3" style="">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Me Section -->
+<section class="px-6 py-24 bg-surface-container-low border-y border-outline-variant" id="about">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+<div class="space-y-6">
+<h2 class="text-3xl font-bold tracking-tight" style="">About Me</h2>
+<div class="h-1 w-12 bg-primary"></div>
+<p class="text-on-surface-variant leading-relaxed text-lg" style="">
+                        Based in the intersection of aesthetics and utility, I've spent over 8 years helping startups and established brands build digital tools that scale. My approach is rooted in the belief that great design is invisible—it simply works exactly how you expect it to.
+                    </p>
+<p class="text-on-surface-variant leading-relaxed text-lg" style="">
+                        I specialize in building design systems that empower teams to move faster while maintaining visual integrity across every touchpoint.
+                    </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-8 bg-surface-container border border-outline-variant rounded-xl group hover:border-primary transition-colors">
+<div class="text-4xl font-extrabold text-primary mb-2" style="">08+</div>
+<div class="text-sm font-medium text-on-secondary-container tracking-wider uppercase" style="">Years of Experience</div>
+</div>
+<div class="p-8 bg-surface-container border border-outline-variant rounded-xl group hover:border-primary transition-colors">
+<div class="text-4xl font-extrabold text-primary mb-2" style="">120+</div>
+<div class="text-sm font-medium text-on-secondary-container tracking-wider uppercase" style="">Projects Completed</div>
+</div>
+<div class="p-8 bg-surface-container border border-outline-variant rounded-xl group hover:border-primary transition-colors">
+<div class="text-4xl font-extrabold text-primary mb-2" style="">45+</div>
+<div class="text-sm font-medium text-on-secondary-container tracking-wider uppercase" style="">Happy Clients</div>
+</div>
+<div class="p-8 bg-surface-container border border-outline-variant rounded-xl group hover:border-primary transition-colors">
+<div class="text-4xl font-extrabold text-primary mb-2" style="">12</div>
+<div class="text-sm font-medium text-on-secondary-container tracking-wider uppercase" style="">Design Awards</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="px-6 py-24 max-w-7xl mx-auto" id="services">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-4xl font-bold tracking-tight" style="">My Services</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto" style="">High-precision digital craftsmanship tailored to your product needs.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- UI/UX Design -->
+<div class="p-10 bg-surface-container border border-outline-variant rounded-xl flex flex-col items-start gap-6 hover:bg-surface-container-high transition-all">
+<div class="w-12 h-12 bg-primary-container/20 rounded flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" style="">design_services</span>
+</div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold" style="">UI/UX Design</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">System-based design that ensures consistency, scalability, and an elite user experience.</p>
+</div>
+</div>
+<!-- Web Development -->
+<div class="p-10 bg-surface-container border border-outline-variant rounded-xl flex flex-col items-start gap-6 hover:bg-surface-container-high transition-all">
+<div class="w-12 h-12 bg-primary-container/20 rounded flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" style="">terminal</span>
+</div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold" style="">Web Development</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">Performant front-end architecture using modern frameworks and clean code principles.</p>
+</div>
+</div>
+<!-- Branding -->
+<div class="p-10 bg-surface-container border border-outline-variant rounded-xl flex flex-col items-start gap-6 hover:bg-surface-container-high transition-all">
+<div class="w-12 h-12 bg-primary-container/20 rounded flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" style="">auto_awesome</span>
+</div>
+<div class="space-y-2">
+<h3 class="text-xl font-bold" style="">Branding</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">Visual identities that resonate with your core audience and stand the test of time.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section (Bento Style) -->
+<section class="px-6 py-24 bg-surface-container-lowest border-t border-outline-variant" id="portfolio">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="space-y-4">
+<h2 class="text-4xl font-bold tracking-tight" style="">Recent Projects</h2>
+<p class="text-on-surface-variant max-md" style="">A selection of work across FinTech, E-commerce, and SaaS.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:underline" style="">
+                        Explore All <span class="material-symbols-outlined" style="">north_east</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[800px]">
+<!-- Large Feature -->
+<div class="md:col-span-8 bg-surface-container border border-outline-variant rounded-xl overflow-hidden relative group cursor-pointer">
+<img alt="Nexus Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60" data-alt="SaaS Dashboard interface with dark theme and charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ03CDFzR0ewnZtnrpfHx8GDN7uDe0jnB6sjqgWCudvp1nBmltm5GKre2MZG5JCNzv4gakNURJfaJNXA2mU2rcjJl1G1ZhVxKS8INHfqk0D7GkbgRmj30ZlR1XAceKYe3LeVNsekJq8n7m6A9hlx7Nbt3IuF6ey0PJV9kiC-HQM8OZcRvCR1vzqW3EXXOuiDtoLwkJO7zby3hzoQAvjMCvKzvPiKskE-KfS3JPeVk1mnK1Jq7QxOtnBOZcyAjSIdnCDCmi5mqXUx1H" style="">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 space-y-2">
+<span class="text-xs font-bold text-tertiary uppercase tracking-widest" style="">SaaS Product</span>
+<h3 class="text-3xl font-bold" style="">Nexus Analytics Platform</h3>
+</div>
+</div>
+<!-- Side Item -->
+<div class="md:col-span-4 bg-surface-container border border-outline-variant rounded-xl overflow-hidden relative group cursor-pointer">
+<img alt="Lumina Identity" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60" data-alt="Abstract gradient artwork in dark violet and emerald" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6kChtUa-WSQj506usSr7hTGWEOibZcNtVMlkTZlj8oeMTXaUq9x29qlSWFM5bTMipvlxk53qTZu01Ak7k7YmXgUl4hTQCb4n21_L9y2UQJ8pL0TljmFKKdpoySMe61T7qTQzpK2EdIL29hUZx5GXj2uLLCdj8VvYEaPSvUuo15_Oy-GNgDGOMZ4PlooIsH8ju3JKGi3xZD2uKA-YiRuT6AX-r-pi3ZpOwjuq4ALuMhnQ24vPlMOEeo5YukBCwT64PFjjTigi53SHV" style="">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 space-y-2">
+<span class="text-xs font-bold text-tertiary uppercase tracking-widest" style="">Branding</span>
+<h3 class="text-2xl font-bold" style="">Lumina Visual System</h3>
+</div>
+</div>
+<!-- Bottom Left -->
+<div class="md:col-span-4 bg-surface-container border border-outline-variant rounded-xl overflow-hidden relative group cursor-pointer">
+<img alt="Stride Mobile" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60" data-alt="Minimal mobile app login screen design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN4Augz4rmmIIeynrHAWyoWBImi0wQJ2VicTqJw7uSLIv8XEtRTs2gmON5Uu1s7oAwgR2AmL8TWwwON59OcqNyyHL98rVgAywNZMEyiIenCwC252Zi1utwEvTzn2JsYzB5ZKBpNu2h611zM2pnkaqKg7hvMQZBvSW-qhJWe_Y-DiRWUSb9Osu8SSEwpQ9xbYwxbQrveXeC5RiKk0mjMB2PcV43FjqS6k0CL-uwkH-itGlCRvuN_4D9sIfx5prhFqfbp7_OGR0py8oY" style="">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 space-y-2">
+<span class="text-xs font-bold text-tertiary uppercase tracking-widest" style="">Mobile App</span>
+<h3 class="text-2xl font-bold" style="">Stride Fitness Tracker</h3>
+</div>
+</div>
+<!-- Bottom Right -->
+<div class="md:col-span-8 bg-surface-container border border-outline-variant rounded-xl overflow-hidden relative group cursor-pointer">
+<img alt="Evolve Shop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60" data-alt="Futuristic e-commerce landing page layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_pC-sB0a-V5k9BLVcdh8qRH30LIAjs13-meVjjxRoAJjtjp3isPCT0XAvQJiIBsuPZBtkgD0uemS3aEcN9NM8zUIrpRKg-FlMdUajck-9hCKuUqYcQZ4nA6DNe8m_3C_WzqGTf1U3ef6vqwLKNSI5OfsiMJClLwzSMLZGBYaodUhmDJf1eK8wgdnULcAqG47OmNvMus_MFhIxf8LghXVi91lSYnQ7RxpotLEoc-658dYldvKIpptmwZHhEd7qvzlVX4sO90vX8qnx" style="">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 space-y-2">
+<span class="text-xs font-bold text-tertiary uppercase tracking-widest" style="">Web Design</span>
+<h3 class="text-3xl font-bold" style="">Evolve Luxury E-Commerce</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="px-6 py-24 max-w-7xl mx-auto" id="contact">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div class="space-y-8">
+<h2 class="text-5xl font-extrabold tracking-tighter" style="">Let's build something <br> <span class="text-primary" style="">remarkable</span>.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md" style="">
+                        Have a project in mind? Or just want to talk about design and tech? I'm always open to discussing new opportunities.
+                    </p>
+<div class="space-y-4 pt-4">
+<div class="flex items-center gap-4 text-on-surface">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="">mail</span>
+</div>
+<span class="font-medium" style="">hello@obsidian.design</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="">location_on</span>
+</div>
+<span class="font-medium" style="">San Francisco, CA</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container border border-outline-variant p-8 md:p-10 rounded-xl">
+<form action="#" class="space-y-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-zinc-500" style="">Name</label>
+<input class="w-full bg-background border border-outline-variant rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-on-background transition-all" placeholder="Your Name" type="text">
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-zinc-500" style="">Email</label>
+<input class="w-full bg-background border border-outline-variant rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-on-background transition-all" placeholder="your@email.com" type="email">
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-zinc-500" style="">Message</label>
+<textarea class="w-full bg-background border border-outline-variant rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-on-background transition-all" placeholder="Tell me about your project..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-bold py-4 rounded-lg hover:brightness-110 transition-all active:scale-[0.98]" type="submit" style="">
+                            Send Message
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-zinc-950 border-t border-zinc-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-6 max-w-7xl mx-auto space-y-6 md:space-y-0">
+<div class="font-geist text-xs text-zinc-500" style="">
+                © 2024 Obsidian. All rights reserved.
+            </div>
+<div class="flex space-x-8 font-geist text-xs">
+<a class="text-zinc-500 hover:text-violet-400 transition-colors" href="#" style="">Twitter</a>
+<a class="text-zinc-500 hover:text-violet-400 transition-colors" href="#" style="">GitHub</a>
+<a class="text-zinc-500 hover:text-violet-400 transition-colors" href="#" style="">LinkedIn</a>
+<a class="text-zinc-500 hover:text-violet-400 transition-colors" href="#" style="">Dribbble</a>
+</div>
+</div>
+</footer>
+</body></html>
